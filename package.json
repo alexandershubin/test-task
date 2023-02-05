@@ -57,7 +57,7 @@
     "build": "gulp build",
     "editorconfig": "editorconfig-cli",
     "start": "gulp start",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax sass",
+    "stylelint": "stylelint \\\"source/scss/**/*.scss\\\" --syntax sass",
     "test": "npm run editorconfig && npm run stylelint"
   },
   "version": "15.0.0"

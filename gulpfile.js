@@ -21,7 +21,7 @@ const server = require("browser-sync").create();
 
 
 gulp.task("css", function () {
-    return gulp.src("source/sass/style.scss")
+    return gulp.src("source/scss/style.scss")
         .pipe(plumber())
         .pipe(sass({includePaths: require('node-normalize-scss').includePaths}))
         .pipe(postcss([
@@ -109,7 +109,7 @@ gulp.task("server", function () {
 
     gulp.watch("source/js/*.js", gulp.series("js"));
     gulp.watch("source/img/**/*.{png,jpg,svg}", gulp.series("images"));
-    gulp.watch("source/sass/**/*.scss", gulp.series("css"));
+    gulp.watch("source/scss/**/*.scss", gulp.series("css"));
     gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html"));
     gulp.watch("source/*.html", gulp.series("html", "refresh")).on("change", server.reload);
 });
@@ -134,5 +134,3 @@ gulp.task(
         "build",
         "server"
     ));
-
-
