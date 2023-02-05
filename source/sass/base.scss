@@ -1,0 +1,50 @@
+body {
+  font-family: $text-font;
+  font-size: 14px;
+  min-width: $mobile-width;
+  margin: 0;
+  padding: 0;
+  background-color: $body-background;
+  color: $text-color;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  background: linear-gradient(238.08deg, #D4208C 0.42%, #E61726 82.5%);
+  border-radius: 6.00414px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
